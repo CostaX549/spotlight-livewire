@@ -1,0 +1,505 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    font-family: 'Jost', sans-serif;
+    text-decoration: none;
+}
+
+.owl-dots {
+  display: none;
+}
+ 
+  
+  
+  body{
+      margin: 0px;
+      padding: 0px;
+      background-color: rgb(15,15,15);
+      overflow-x: hidden;
+  
+  }
+
+  #botaoExcluirFilmes {
+    transition: all 0.3s ease; /* Adicione uma transição suave para todas as propriedades */
+  }
+  
+  #botaoExcluirFilmes.clicked {
+    transform: scale(0.8); /* Reduza o tamanho do botão quando clicado */
+  }
+
+  #dinamicText {
+    transition: opacity 0.3s ease; /* Adiciona uma transição de fade de 0,3 segundos */
+}
+
+ 
+  
+  body::-webkit-scrollbar {
+    width: 6px; /* Largura da barra de rolagem vertical */
+  }
+
+  body::-webkit-scrollbar:hover {
+    width: 5px; /* Largura da barra de rolagem vertical */
+  }
+  
+  /* Estilizando o "polegar" (a parte da barra de rolagem que o usuário arrasta) */
+  body::-webkit-scrollbar-thumb {
+    background-color: #8e8e8e; /* Color of the thumb */
+    border-radius: 5px; /* Borda arredondada */
+  }
+
+    /* Estilizando o "polegar" (a parte da barra de rolagem que o usuário arrasta) */
+    body::-webkit-scrollbar-thumb:hover {
+      background-color: rgba(255,255,255,0.2); /* Color of the thumb */
+      border-radius: 5px; /* Borda arredondada */
+    }
+  
+  /* Estilizando a trilha (o fundo da barra de rolagem) */
+  body::-webkit-scrollbar-track {
+     background-color: #1b1b1b;   /* Cor da trilha */
+     border-radius: 5px; /* Borda arredondada */
+  }
+ 
+ /* Estilos CSS para posicionar o ícone no topo */
+.back-link {
+  position: fixed;
+  top: 10px;
+  left: 10px;
+  margin-left: 10px;
+  z-index: 999; /* Para garantir que o ícone esteja na parte superior */
+  transition: transform 0.2s; /* Transição suave para a escala */
+  border-radius: 50%; /* Torna o elemento um círculo */
+}
+
+/* Estilos para o efeito de hover */
+.back-link:hover {
+  transform: scale(1.3); /* Aumenta em 10% quando o mouse passa sobre ele */
+
+}
+
+ a {
+  text-decoration: none;
+}
+
+#main img:hover {
+background-color: aquamarine;
+}
+#main img {
+  transition: transform 0.3s ease-in-out; /* Adicione uma transição suave para o efeito */
+}
+
+
+  
+  
+  
+  
+  
+  
+  
+ 
+
+
+  
+  
+  
+    @media (max-width: 1000px) {
+     
+
+    .back-link {
+      position: absolute;
+    }
+    }
+  
+  
+  iframe {
+    border-radius: 30px;
+   
+  }
+  
+  
+  
+    
+   
+    
+   
+  
+    
+  
+    #teste {
+      background-image:linear-gradient(to right,rgb(190,153,58),rgb(111,82,51));
+      
+    
+      
+    }
+  
+    
+   
+  li  img {
+    padding: 25px;
+  }
+  .season-divider {
+    margin-top: 20px; /* Espaçamento entre temporadas */
+    border: none;
+    border-top: 1px solid #ccc; /* Cor e estilo da linha */
+}
+
+
+/* Estilos para cada temporada */
+.season {
+ 
+  border-radius: 8px;
+  padding: 20px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  text-align: center;
+  transition: transform 0.2s; /* Efeito de transição suave ao passar o mouse */
+  width: 100%;  background-color: #121212;
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.5);
+
+}
+
+
+/* Estilos para o texto das temporadas */
+.season h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+
+
+.overview-text {
+
+  font-size: 18px; /* Define o tamanho da fonte */
+text-align: left;
+  line-height: 1.4; /* Define a altura da linha para melhor legibilidade */
+ 
+  margin-bottom: 10px; /* Adiciona espaço na parte inferior do elemento */
+}
+.selecionado {
+  position: relative;
+}
+
+.selecionado img {
+  opacity: 0.7; /* Aplica a opacidade somente à imagem */
+  transition: opacity 0.3s ease; /* Adiciona uma transição suave de opacidade */
+}
+
+.selecionado::before {
+  content: '\2713'; /* Código Unicode para o caractere "checkmark" (v) */
+  position: absolute;
+  top: 45%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 40px; /* Tamanho do ícone */
+  color: white; /* Cor do ícone */
+  padding: 4px; /* Espaçamento dentro do ícone */
+  border-radius: 50%; /* Para tornar o ícone circular */
+  z-index: 1; /* Para garantir que o ícone esteja acima da imagem */
+
+  transition: opacity 0.3s ease; /* Adiciona uma transição suave de opacidade */
+}
+
+
+.season img {
+  max-width: 100%;
+  border-radius: 8px;
+  margin-bottom: 10px;
+}
+  li a:hover {
+    color: rgb(190,153,58);
+  }
+  
+   li a{
+      text-decoration: none;
+      color: rgb(255, 254, 254);
+      width: 100%;
+      
+      padding: 20px;
+  }
+
+  a {
+    text-decoration: none;
+    color: rgb(255, 254, 254);  
+  }
+ 
+  
+  
+  
+  
+ 
+  
+   
+    
+  
+    .col-md-3 img {
+      transition: transform 0.3s ease-in-out; /* Adicione uma transição suave para o efeito */
+      cursor: pointer;
+    }
+   
+  
+ 
+  
+  
+
+  
+  
+  
+  
+ 
+ 
+  
+  
+  
+  
+  li  img {
+    padding: 25px;
+  }
+  
+  
+ 
+  
+  
+  #menu{
+    animation-name: fade-in;
+   
+    animation-duration: 0.5s;
+    padding: 10px;
+    margin-left: 30px;
+  
+  }
+  
+  
+  
+  
+  
+  
+  
+  
+  
+ 
+  
+  li{
+    display: flex;
+    align-items: center;
+    
+    
+    
+  }
+  
+ 
+  
+
+  
+  
+
+  
+  
+  
+  
+  
+  
+    #remover-video:hover {
+      /* Estilos ao passar o mouse */
+      background-color: rgba(255, 255, 255, 0.2); /* Vermelho semi-transparente */
+    }
+  
+  
+  
+  
+  
+  
+  
+
+  
+  
+  
+  
+ 
+
+
+/* Adicione essas classes ao seu arquivo CSS para estilizar o layout */
+
+
+
+
+
+/* Imagens de Fundo */
+
+
+.container {
+  border-radius: 10px;
+  padding: 5px;
+}
+.col-md-3 img:hover:not(.no-hover-transform) {
+  transform: scale(1.1); /* Aumente o zoom da imagem quando o mouse estiver sobre ela */
+
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+nav {
+  padding: 0;
+  margin: 0;
+}
+
+
+
+
+
+#remover-historico {
+
+ 
+  transition: background-color 0.3s;
+  border-radius: 50%;
+right: 20%;
+  width: 30px;
+  height: 30px;
+  border: none;
+  background-color: transparent;
+  color: #ffffff;
+  font-size: 20px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 1;
+}
+
+#remover-historico:hover {
+  /* Estilos ao passar o mouse */
+  background-color: rgba(255, 255, 255, 0.2); /* Vermelho semi-transparente */
+}
+
+
+
+
+#teste {
+  background-image:linear-gradient(to right,rgb(190,153,58),rgb(111,82,51));
+  
+
+  
+}
+
+ #infocontainer {
+  background-color: #141414;
+  color: white;
+  padding: 30px;
+  border-radius: 10px;
+ 
+}/** Estilo para a imagem principal */
+.main-image {
+  width: 86%; /* Defina a largura que desejar */
+  max-height: 100vh; /* Defina a altura máxima que desejar */
+  object-fit: cover;
+  
+  border-radius: 10px; /* Adicione um valor de border-radius para arredondar as bordas */
+  display: block; /* Para centralizar horizontalmente */
+  margin: 0 auto; /* Para centralizar horizontalmente */
+ 
+}
+
+
+
+
+.custom-container {
+  border-radius: 10px; /* Ajuste o valor conforme desejado */
+  border: 1px solid gray; /* Adicione uma borda para destacar o container */
+
+  padding: 10px; /* Adicione um espaçamento interno para melhorar a aparência */
+  margin-bottom: 20px; /* Adicione margem inferior para separar os containers */
+
+  
+}
+
+.custom-container:hover {
+ 
+ background-color: rgb(254,254,254,0.2);
+
+}
+.custom-padding {
+  padding: 12px; /* Ajuste o valor conforme desejado */
+}
+
+
+
+
+
+
+
+/* Resto do seu CSS */
+
+
+
+/* Ajuste do estilo do título e do conteúdo */
+
+.search {
+  display: inline-flex;
+  align-items: center;
+  background-image:linear-gradient(to right,rgb(190,153,58),rgb(111,82,51));
+  color: #fff;
+  padding: 10px;
+  border-radius: 4px;
+  border: 1px solid #fff;
+}
+
+
+
+.search :is(input, button) {
+  background: transparent;
+  color: inherit;
+  border:none;
+  outline: none;
+}
+
+.searchinput {
+
+  transition: width 0.5s;
+}
+
+.searchbutton {
+  display: grid;
+  place-items: center;
+  width: 25px;
+  height: 25px;
+
+  cursor: pointer;
+  transition: color 0.25s
+}
+
+#profile-photo {
+  width: 56px;
+  height: 56px;
+  object-fit: cover;
+  margin-left: 50px;
+}
+
+.search:not(:focus-within) .searchinput {
+  width: 0;
+}
+
+.searchbutton:hover {
+  color: #e3e3e3;
+}
+
+.search:focus-within input {
+width: 200px;
+}
+::placeholder {
+  font: inherit;
+  color: #e3e3e3;
+}
+
+/* Remova a borda de foco padrão */
+.search :is(input, button):focus {
+  outline: none;
+  border: none;
+}
+
+.carousel-inner .carousel-item {
+  transition: transform 0.5s ease-in-out;
+}
+
+
+
+
+
